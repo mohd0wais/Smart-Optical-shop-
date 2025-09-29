@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Optical - See the Future</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="path_to_your_script.js"></script>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo-container">
+            <img src="https://i.pinimg.com/736x/6f/23/ce/6f23ce719750271e70b66806be74aea0.jpg" alt="Optical Shop Logo">
+            <span>Smart Optical</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+            <a class="cart-icon" onclick="viewCart()">Order</a>
+            <button class="login-btn" onclick="openAuth()">👤</button>            
+
+        </nav>
+
+    
+        
+
+    </header>
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <div class="experience-container">
+            <div class="experience-text">
+                <h2>Experience Excellence</h2>
+                <p>We believe in crafting perfection. From the finest materials to timeless designs, every piece is created to leave a lasting impression.</p>
+                <p>Our commitment to quality ensures that every product reflects elegance, comfort, and sophistication. Whether it's traditional attire or modern fashion, we blend heritage with contemporary styles.</p>
+                <p>Join us on a journey of exquisite craftsmanship and unparalleled style. Discover what makes us different.</p>
+                <a href="#" class="btn">Explore More</a>
+            </div>
+    
+            <div class="experience-image">
+                <img src="https://i.pinimg.com/736x/98/12/ab/9812abdf16e7776d05e142bd8e8a8941.jpg" alt="Experience Excellence">
+            </div>
+        </div>
+    </section>
+    
+    <style>
+    /* Experience Section Styling */
+    .experience-section {
+        width: 100%;
+        padding: 80px 5%;
+        background: #111;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .experience-container {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+    }
+    
+    .experience-text {
+        width: 55%;
+        background: #222;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(255, 204, 0, 0.2);
+    }
+    
+    .experience-text h2 {
+        font-size: 2em;
+        color: #ffcc00;
+        margin-bottom: 15px;
+    }
+    
+    .experience-text p {
+        font-size: 1.1em;
+        color: #ddd;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        background: #ffcc00;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    
+    .btn:hover {
+        background: #ffaa00;
+    }
+    
+    /* Image Section - Adjusted Size */
+    .experience-image {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .experience-image img {
+        width: 100%;
+        max-width: 400px; /* Ensuring it doesn’t go beyond layout */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 900px) {
+        .experience-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .experience-text {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    
+        .experience-image {
+            width: 100%;
+        }
+    }
+    </style>
+
+
+
+
+
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="slider-container">
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <div class="slider">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/28/61/f1/2861f180a79057f0af83b2d2c9301b64.jpg" alt="Stylish Glasses">
+                    <h3>Stylish Glasses</h3>
+                    <p>₹1200</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/0e/0e/8e/0e0e8ea981b14d1a96c13c09840d6f46.jpg" alt="Classic Sunglasses">
+                    <h3>Classic Sunglasses</h3>
+                    <p>₹1500</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/98/bc/3c/98bc3c2ad813d1ce7f95cee0153ac599.jpg" alt="Blue Light Blockers">
+                    <h3>Blue Light Blockers</h3>
+                    <p>₹1300</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/ee/b7/f9/eeb7f90bf66c7d791292941bbc00acbe.jpg" alt="Premium Aviators">
+                    <h3>Premium Aviators</h3>
+                    <p>₹1800</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/89/ec/b2/89ecb2e5671bb0cc6a0377bcb2ead090.jpg" alt="Sporty Shades">
+                    <h3>Sporty Shades</h3>
+                    <p>₹1400</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/f8/fb/2b/f8fb2be9afd4e4d5c1c814090f16163a.jpg" alt="Modern Spectacles">
+                    <h3>Modern Spectacles</h3>
+                    <p>₹1600</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/bd/f0/f1/bdf0f1849e49481b941aede455f95823.jpg" alt="Luxury Frames">
+                    <h3>Luxury Frames</h3>
+                    <p>₹2200</p>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+            </div>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    
+    
+
+    <section id="products">
+        <h2>Our Bestsellers</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/92/ea/11/92ea1153f869905530fc9cf004a83157.jpg" alt="Classic Frames">
+                <h3>Classic Frames</h3>
+                <p>₹1999</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/4a/2f/15/4a2f15bc2e12738cfe746e81b130ad4d.jpg" alt="Modern Glasses">
+                <h3>Modern Look</h3>
+                <p>₹1499</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/4f/bd/f5/4fbdf55ae23ef95e4de4fa228ed87e69.jpg" alt="Modern Spectacles">
+                <h3>Modern Spectacles</h3>
+                <p>₹1600</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/47/4b/28/474b28923995414d00dd2b37c88bfc36.jpg" alt="Luxury Sunglasses">
+                <h3>Luxury Sunglasses</h3>
+                <p>₹2000</p>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- Login & Signup Sidebar -->
+            <div id="authSidebar" class="auth-sidebar" >
+                <div class="auth-content">
+                    <span class="close-btn" style="margin-top: 80px;" onclick="closeAuth()">&times;</span>
+            
+                    <!-- Login Form -->
+                    <div id="loginForm" >
+                        <h2>Welcome Back</h2>
+                        <input type="text" id="loginUsername" placeholder="Enter your username" required>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                        <button onclick="loginUser()">Login</button>
+                        <p id="loginError" style="color: red;"></p>
+                        <p class="switch-auth">New here? <a href="#" onclick="showSignup()">Create an Account</a></p>
+                        <button class="back-btn" onclick="closeCart()">Back to Home</button>
+                    </div>
+            
+                    <!-- Signup Form -->
+                    <div id="signupForm" style="display: none;">
+                        <h2>Create an Account</h2>
+                        <input type="text" id="signupUsername" placeholder="Choose a username" required>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                        <button onclick="signupUser()">Sign Up</button>
+                        <p id="signupError" style="color: red;"></p>
+                        <p class="switch-auth">Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+                        <button class="back-btn" onclick="goHome()">Back to Home</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cart Sidebar -->
+            <div id="cartSidebar" class="cart-sidebar" >
+                <div class="cart-content">
+                    <span class="close-btn" style="margin-top: 80px" onclick="closeCart()">×</span>
+                    <h2>Your Cart</h2>
+                    
+                    <!-- Cart Items -->
+                    <div id="cartItems" class="cart-items">
+                        <div class="item">
+                            <p>Item Name</p>
+                            <p>₹100</p>
+                            <button class="cancel-btn" onclick="cancelProduct(this)">Cancel</button>
+                        </div>
+                        <!-- More cart items -->
+                    </div>
+                    
+                    <!-- Cart Total -->
+                    <div class="cart-total">
+                        Total: ₹<span id="totalPrice">0</span>
+                    </div>
+                    
+                    <!-- Action Buttons -->
+                    <button class="back-btn" onclick="ClickToPay()">Click To Pay</button>
+                    <button class="back-btn" onclick="goHome()">Back to Home</button>
+
+                </div>
+            </div>    
+
+
+
+
+            
+
+
+
+            
+        </div>
+    </section>
+
+
+    
+    
+
+    
+    
+    <!-- FontAwesome for Icons (Include this in your HTML head) -->
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2 class="section-title">People Say</h2>
+        <div class="review-container">
+            <div class="review">
+                <h3>Wajiha</h3>
+                <p>"Amazing service! The eye test was free, and the staff helped me find the perfect glasses. Highly recommend!"</p>
+            </div>
+            <div class="review">
+                <h3>Sana</h3>
+                <p>"Great collection of frames at affordable prices. The quality is excellent, and the customer service is top-notch."</p>
+            </div>
+            <div class="review">
+                <h3>Rajesh</h3>
+                <p>"Professional staff and a wide variety of stylish glasses. The delivery was super fast!"</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <p>At our optical store, we prioritize quality, affordability, and customer satisfaction. Here’s why you should choose us:</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Expert Consultation</h3>
+                <p>Our professionals help you find the perfect eyewear for your needs.</p>
+            </div>
+            <div class="feature">
+                <h3>Free Eye Testing</h3>
+                <p>Get your vision checked for free by certified optometrists.</p>
+            </div>
+            <div class="feature">
+                <h3>Affordable Pricing</h3>
+                <p>We offer stylish and durable eyewear at unbeatable prices.</p>
+            </div>
+            <div class="feature">
+                <h3>Fast & Reliable Service</h3>
+                <p>Quick delivery and hassle-free replacements for a great shopping experience.</p>
+            </div>
+            <div class="feature">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3752.6130063053374!2d75.303235!3d19.856320999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDUxJzIyLjgiTiA3NcKwMTgnMTEuNyJF!5e0!3m2!1sen!2sin!4v1758032047203!5m2!1sen!2sin" width="100%" height="260" style="border:0; border-radius: 15px;"  allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+        
+
+    
+
+   
+    
+
+    <footer>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to our Smart Optical! We offer a variety of premium eyewear, including prescription glasses, sunglasses, and blue-light blockers. Your vision is our priority.</p>
+        </section>
+    
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>★ Eye Checkup & Consultation</li>
+                <li>★ Prescription Glasses & Lenses</li>
+                <li>★ Wide Range of Sunglasses</li>
+                <li>★ Custom Lens Fitting</li>
+                <li>★ Frame Repair & Replacement</li>
+            </ul>
+        </section>
+        
+    
+        <section id="location">
+            <h2>Our Location</h2>
+            <p>📍 Smart Optical, Opposite to Railway Station Flyover, Paithan road, Aurangabad </p>
+            <p><a href="https://maps.app.goo.gl/TrxJCgRSnEnteJKC8" target="_blank" style="color: #ff9800;">View on Google Maps</a></p>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>📞 Phone: +91 9823737075</p>
+            <p>📧 Email: support@smartoptical.com</p>
+            <p>🕒 Working Hours: 10 AM - 9 PM (Mon-Sat)</p>
+        </section>
+    </footer>
+
+
+    <script>
+        function addReview() {
+            let name = document.getElementById("reviewName").value || "Anonymous";
+            let reviewText = document.getElementById("reviewText").value;
+            let reviewRating = document.getElementById("reviewRating").value;
+    
+            if (reviewText.trim() === "") {
+                alert("Please enter your review.");
+                return;
+            }
+    
+            let reviewContainer = document.querySelector(".reviews-container");
+            let newReview = document.createElement("div");
+            newReview.classList.add("review");
+            newReview.innerHTML = `
+                <img src="images/default-user.png" class="review-pic">
+                <h4>${name}</h4>
+                <p>"${reviewText}"</p>
+                <span class="stars">${"★".repeat(reviewRating) + "☆".repeat(5 - reviewRating)}</span>`;
+    
+            reviewContainer.appendChild(newReview);
+            document.getElementById("reviewText").value = "";
+            document.getElementById("reviewName").value = "";
+        }
+    
+        function logout() {
+            document.getElementById("username").textContent = "Guest";
+        }
+    </script>
+    
+    
+    
+
+</body>
+</html>
+
+
+<script>
+    let currentIndex = 0;
+    const slider = document.querySelector(".slider");
+    const items = document.querySelectorAll(".product");
+    const itemWidth = items[0].clientWidth + 20; // Add margin space
+    const totalItems = items.length;
+    let isTransitioning = false;
+
+    // Duplicate the first few products to create a seamless loop
+    items.forEach(item => {
+        let clone = item.cloneNode(true);
+        slider.appendChild(clone);
+    });
+
+    function nextSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex++;
+        updateSlider();
+
+        // Reset position to create an infinite loop effect
+        setTimeout(() => {
+            if (currentIndex >= totalItems) {
+                currentIndex = 0;
+                slider.style.transition = "none";
+                updateSlider();
+                setTimeout(() => {
+                    slider.style.transition = "transform 0.5s ease-in-out";
+                });
+            }
+            isTransitioning = false;
+        }, 500);
+    }
+
+    function prevSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex--;
+        updateSlider();
+
+        setTimeout(() => {
+            if (currentIndex < 0) {
+                currentIndex = totalItems - 1;
+                slider.style.transition = "none";
+                updateSlider();
+                setTimeout(() => {
+                    slider.style.transition = "transform 0.5s ease-in-out";
+                });
+            }
+            isTransitioning = false;
+        }, 500);
+    }
+
+    function updateSlider() {
+        slider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    }
+
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
+</script>
+
+<script>
+    function openLogin() {
+        document.getElementById("loginModal").style.display = "flex";
+    }
+
+    function closeLogin() {
+        document.getElementById("loginModal").style.display = "none";
+    }
+
+    function loginUser() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "1234") {
+            alert("Login Successful!");
+            closeLogin();
+        } else {
+            document.getElementById("loginError").innerText = "Invalid username or password!";
+        }
+    }
+</script>
+
+
+
+<script>
+    function openLogin() {
+        document.getElementById("loginSidebar").style.right = "0";
+    }
+
+    function closeLogin() {
+        document.getElementById("loginSidebar").style.right = "-300px";
+    }
+
+    function loginUser() {
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username === "admin" && password === "1234") {
+            alert("Login Successful!");
+            closeLogin();
+        } else {
+            document.getElementById("loginError").innerText = "Invalid username or password!";
+        }
+    }
+</script>
+
+
+
+<script>
+    function openAuth() {
+        document.getElementById("authSidebar").style.right = "0";
+    }
+
+    function closeAuth() {
+        document.getElementById("authSidebar").style.right = "-350px";
+    }
+
+    function showSignup() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("signupForm").style.display = "block";
+    }
+
+    function showLogin() {
+        document.getElementById("signupForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+    }
+
+    function loginUser() {
+        let username = document.getElementById("loginUsername").value;
+        let password = document.getElementById("loginPassword").value;
+
+        if (username === "admin" && password === "1234") {
+            alert("Login Successful!");
+            closeAuth();
+        } else {
+            document.getElementById("loginError").innerText = "Invalid username or password!";
+        }
+    }
+
+    function signupUser() {
+        let username = document.getElementById("signupUsername").value;
+        let email = document.getElementById("signupEmail").value;
+        let password = document.getElementById("signupPassword").value;
+
+        if (username && email && password) {
+            alert("Account Created Successfully!");
+            showLogin(); 
+        } else {
+            document.getElementById("signupError").innerText = "All fields are required!";
+        }
+    }
+
+    function goHome() {
+        window.location.href = "index.html"; // Change to your home page
+    }
+</script>
+
+
+<script>
+    let cart = [];
+
+    // Function to add items to the cart
+    function addToCart(product) {
+        cart.push(product);
+        updateCartCount();
+    }
+
+    // Function to update the cart item count
+    function updateCartCount() {
+        document.getElementById("cartCount").innerText = cart.length;
+    }
+
+    // Function to view the cart (opens a modal or sidebar)
+    function viewCart() {
+        let cartContent = '';
+        let totalPrice = 0;
+
+        // Display each item in the cart
+        cart.forEach(item => {
+            cartContent += `<p>${item.name} - ₹${item.price}</p>`;
+            totalPrice += item.price;
+        });
+
+        cartContent += `<h3>Total: ₹${totalPrice}</h3>`;
+        document.getElementById("cartItems").innerHTML = cartContent;
+
+        // Show cart modal/sidebar
+        document.getElementById("cartSidebar").style.right = "0";
+    }
+
+    // Function to close the cart
+    function closeCart() {
+        document.getElementById("cartSidebar").style.right = "-350px";
+    }
+
+    // Function to handle the "Buy Now" action
+    function buyNow(product) {
+        addToCart(product);
+        alert("Item added to cart. You can view the cart or proceed to checkout.");
+    }
+
+    // Example: Each product has a Buy Now button linked to the addToCart function
+    const products = document.querySelectorAll('.buy-btn');
+    products.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            const product = {
+                name: button.parentElement.querySelector('h3').innerText,
+                price: parseInt(button.parentElement.querySelector('p').innerText.replace('₹', ''))
+            };
+            buyNow(product);
+        });
+    });
+</script>
+
+<script>
+function checkout() {
+    if (cart.length === 0) {
+        alert("Your cart is empty.");
+    } else {
+        // Here you could process the checkout logic
+        alert("Proceeding to checkout.");
+        // Redirect to a checkout page or handle the payment flow
+    }
+}
+</script>
+
+<script>
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const reviewText = document.getElementById("reviewText").value;
+        const reviewList = document.getElementById("reviewList");
+
+        if (name.trim() !== "" && reviewText.trim() !== "") {
+            const reviewHTML = `
+                <div class="review">
+                    <h3>${name}</h3>
+                    <p>${reviewText}</p>
+                </div>
+            `;
+
+            reviewList.innerHTML += reviewHTML;
+
+            // Clear input fields after submission
+            document.getElementById("name").value = "";
+            document.getElementById("reviewText").value = "";
+        }
+    });
+</script>
+
+
+
+
+
